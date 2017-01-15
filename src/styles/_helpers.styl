@@ -1,0 +1,29 @@
+/*
+*
+* Mixins 
+*
+*/
+
+percentage(x)
+    unit(x * 100, '%')
+
+bg-img(url, width, height, retina = false)
+
+    if !retina
+
+        background-image: url(url);
+        background-size: unit(width, px) unit(height, px);
+        background-repeat: no-repeat;
+        width: unit(width, px);
+        height: unit(height, px);
+
+    else
+        
+        background-image: url(url);
+        background-size: unit(width / 2, px) unit(height / 2, px);
+        background-repeat: no-repeat;
+        width: unit(width / 2, px);
+        height: unit(height / 2, px);
+
+
+

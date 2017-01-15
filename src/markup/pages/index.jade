@@ -1,0 +1,168 @@
+extends ../layouts/base.jade
+
+block main-content
+
+    .main-nav
+        .main-nav__spacer
+        .main-nav__actual
+            .main-nav__content-wrap
+                .main-nav__left
+                    .main-nav__logo
+                        img(src='img/logos/stjohn.svg')
+
+                .main-nav__right
+                    ul.main-nav__list
+                        li.main-nav__list-item
+                            a.main-nav__link(href='http://www.stjohnedufoundation.org/#!about/conr')
+                                | ABOUT US
+                        li.main-nav__list-item
+                            a.main-nav__link(href='http://www.stjohnedufoundation.org/#!about/conr')
+                                | MISSION
+                        li.main-nav__list-item
+                            a.main-nav__link(href='http://www.stjohnedufoundation.org/#!about/conr')
+                                | GOALS
+                        li.main-nav__list-item
+                            a.main-nav__link(href='http://www.stjohnedufoundation.org/#!meet-the-graduates/c1lts')
+                                | TESTIMONIALS
+
+                    a.main-nav__donate-button(href='https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=IBgPW7g9Gnt0YG5i9sVY9ahz4dyzZbxwzwKLBXEcBR5S8UalusPU07Iluta&dispatch=5885d80a13c0db1f8e263663d3faee8defcd6970d4fd9d661117ac2649af92bb', target='_blank')
+                        | DONATE ONLINE
+
+                .main-nav__hamburger
+                    .main-nav__hamburger__line
+                    .main-nav__hamburger__line
+                    .main-nav__hamburger__line
+    .mobile-nav
+        .mobile-nav__inner
+            ul.mobile-nav__list
+                li.mobile-nav__list-item
+                    a.mobile-nav__link(href='http://www.stjohnedufoundation.org/#!about/conr')
+                        | ABOUT US
+                li.mobile-nav__list-item
+                    a.mobile-nav__link(href='http://www.stjohnedufoundation.org/#!about/conr')
+                        | MISSION
+                li.mobile-nav__list-item
+                    a.mobile-nav__link(href='http://www.stjohnedufoundation.org/#!about/conr')
+                        | GOALS
+                li.mobile-nav__list-item
+                    a.mobile-nav__link(href='http://www.stjohnedufoundation.org/#!meet-the-graduates/c1lts')
+                        | TESTIMONIALS
+
+            a.main-nav__donate-button(href='https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=IBgPW7g9Gnt0YG5i9sVY9ahz4dyzZbxwzwKLBXEcBR5S8UalusPU07Iluta&dispatch=5885d80a13c0db1f8e263663d3faee8defcd6970d4fd9d661117ac2649af92bb', target='_blank') DONATE ONLINE
+
+    section.header-section
+        .header-mobile-bg.hide--desktop
+            img(src='img/bg-mobile.jpg')
+
+        .header-section__callout
+            .header-section__callout__copy
+                | Make the change
+                br
+                | in the life of
+                br
+                | one child today
+
+            a.header-section__callout__button(href='https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=IBgPW7g9Gnt0YG5i9sVY9ahz4dyzZbxwzwKLBXEcBR5S8UalusPU07Iluta&dispatch=5885d80a13c0db1f8e263663d3faee8defcd6970d4fd9d661117ac2649af92bb', target='_blank')
+                | DONATE ONLINE
+
+            a.header-section__callout__learn-more(href='http://www.stjohnedufoundation.org/#!about/conr')
+                | Learn More
+
+    section.mission-section
+        .content-wrap
+            h2.mission-section__header.section-header Our Mission
+            p.mission-section__copy
+                | The St. John Educational Foundation works to further educational opportunities for underpriveleged Filipino students. The foundation was established on the basic principles of 
+                span.emphasis love, giving, excellence,
+                |  and 
+                span.emphasis perseverance
+                | . Members express their love and sense of giving to their community by contributing money, time, and effort to achieve the mission and objectives of the foundation. 
+                a.link(href='') Read More »
+
+    section.goal-section
+        .content-wrap
+            h2.goal-section__header.section-header Our Goals
+            .goal-callout-container
+                .goal-callout
+                    .goal-callout__icon
+                        img(src='img/icon-scholarship.svg')
+                    .goal-callout__copy
+                        | Providing a free scholarship program for both Filipino high school and college students
+
+                .goal-callout
+                    .goal-callout__icon
+                        img(src='img/icon-financing.svg')
+                    .goal-callout__copy Providing an interest-free educational loan assistance program
+
+                .goal-callout
+                    .goal-callout__icon
+                        img(src='img/icon-tools.svg')
+                    .goal-callout__copy Providing tools for a successful educational and post-educational experience
+
+            a.goal-section__link-out(href='')
+                | Learn more about the scholarship
+
+    section.results-section
+        .content-wrap
+            .results-section__header.section-header Our Results
+            .results-section__placeholder Placeholder
+
+    section.testimonial-section
+        .content-wrap
+            .testimonial-section__header.section-header Current scholars and alumni
+            .testimonial-section__carousel-container
+                .testimonial-carousel
+                    .testimonial-carousel__hero
+                        img(src='img/testimonial-1.png')
+
+                    .testimonial-carousel__copy
+                        | As a college student pursuing a Bachelor of Science in Agricultural Engineering at Isabella State University (Echague Campus), my goal is to finish my course in 5 years. Then I hope to pass the board examination.  I will find a job that fits my studies to repay the financial support that my alma mater (St. Johns Educational Foundation) have provided for me during my college years.
+
+            a.testimonial-section__link-out(href='')
+                | Read More Testimonials
+
+    section.fundraiser-section
+        .content-wrap
+            .fundraiser-section__header.section-header The Annual Dinner Dance Fundraiser
+            .fundraiser-section__hero
+                img(src='img/fundraiser-hero.jpg')
+
+            .fundraiser-section__copy
+                | The benefactors of this foundation come from all over the world. We have members in many of the major cities of the U.S., members in Canada, and even some from Europe and the Middle East. Each year, since July of 2004, a dinner dance fundraiser has been held in a different host city to bring these members together.
+
+            a.fundraiser-section__link-out(href='') RSVP & join us!
+
+    .main-footer
+        .content-wrap
+            .main-footer__left
+                .main-footer__logo
+                    img(src='img/logos/logo.svg')
+
+                ul.footer-nav
+                    li.footer-nav__item
+                        a(href='')
+                            | ABOUT US
+                    li.footer-nav__item
+                        a(href='')
+                            | MISSION
+                    li.footer-nav__item
+                        a(href='')
+                            | GOALS
+                    li.footer-nav__item.footer-nav__item--no-line
+                        a(href='')
+                            | TESTIMONIALS
+                    li.footer-nav__item
+                        a(href='')
+                            | SIGNUP FOR OUR NEWSLETTER
+                    li.footer-nav__item.emphasis
+                        a(href='')
+                            | DONATE
+                            
+            .main-footer__right
+                .icon-list
+                    a.icon-list__item.icon-list__item--fb
+                        img(src='img/icons/fb.svg')
+                    a.icon-list__item.icon-list__item--twitter
+                        img(src='img/icons/twitter.svg')
+                    a.icon-list__item.icon-list__item--insta
+                        img(src='img/icons/insta.svg') 
