@@ -82,24 +82,24 @@ gulp.task('styles:prod', function() {
         .pipe(autoprefixer({
             browsers: ['last 2 version', '> 1%', 'ff 17', 'ie 8']
         }))
-        .pipe(
-            modifyCssUrls({
-                modify: function(url, filePath) {
+        // .pipe(
+        //     modifyCssUrls({
+        //         modify: function(url, filePath) {
 
-                    if (!/^(f|ht)tps?:\/\//i.test(url)) {
+        //             if (!/^(f|ht)tps?:\/\//i.test(url)) {
 
-                        if(/\.\./.test(url)) {
-                            url = url.split('../')[1];
-                        }
+        //                 if(/\.\./.test(url)) {
+        //                     url = url.split('../')[1];
+        //                 }
 
-                        url = cdnPath + url;
-                    }
+        //                 url = cdnPath + url;
+        //             }
 
-                    return url;
+        //             return url;
 
-                }
-            })
-        )
+        //         }
+        //     })
+        // )
         .pipe(gulp.dest('dist/css'));
 });
 
