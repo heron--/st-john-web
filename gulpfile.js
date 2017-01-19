@@ -15,7 +15,7 @@ var modifyCssUrls = require('gulp-modify-css-urls');
 
 // Relative to the html file
 var stagePath = '';
-var cdnPath = 'https://s3.amazonaws.com/qh-cdn/campaigns/Senior-Advisor-2016__3734/';
+var cdnPath = '';
 
 /*
 *  Markup
